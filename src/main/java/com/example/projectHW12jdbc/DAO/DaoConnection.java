@@ -5,7 +5,7 @@ import java.sql.*;
 public class DaoConnection {
     public static Connection connection() throws ClassNotFoundException, SQLException {
         Class.forName("org.postgresql.Driver");
-        Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres",
+        Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/UsersAndDevices",
                 "postgres", "olenkasql");
         return connection;
     }
